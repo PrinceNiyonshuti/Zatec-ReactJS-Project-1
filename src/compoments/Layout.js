@@ -1,12 +1,16 @@
 import React from "react";
 import NavBar from "./NavBar";
+import SideNav from "./SideNav";
 import Main from "./Main";
 import Footer from "./Footer";
 
 function Layout() {
   return (
     <div>
-      <h2> Layout Data</h2>
+      <NavBar />
+      <SideNav />
+      <Main />
+      <Footer />
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-white shadow">
-      <div className="flex flex-wrap p-6 bg-white">
+    <div className="bg-gray-100 shadow">
+      <div className="flex flex-wrap p-6">
         <div className="flex flex-wrap justify-center mb-4 w-full">
           <div className="w-full  sm:w-1/2 md:w-1/2 lg:w-1/4 px-8 ">
             <ul>

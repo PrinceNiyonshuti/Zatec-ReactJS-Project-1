@@ -4,7 +4,7 @@ Created with CodeSandbox
 
 # 1. Problems and findings
 
-##Problems
+## Problems
 
 - on class components first it was trick to pass data from state on image src
 - i tried to see if i can get the data from textarea and pass it to state
@@ -13,7 +13,6 @@ Created with CodeSandbox
 ## Findings
 
 - to pass data from state to img src you don't use "" you pass the data as it is
--
 
 # 2. Time Taken to Complete
 
@@ -24,7 +23,7 @@ Created with CodeSandbox
     the coding style is used was line coding and error control and
     the standard of using safe ,secure and portable codes
 
-# 4. Your source code files plus the final (e.g. compiled) result that can be opened directly in a browser
+# 4. Your source code files plus the final result that can be opened directly in a browser
 
 [Link To Repository](https://github.com/PrinceNiyonshuti/Zatec-ReactJS-Project-1.git)
 

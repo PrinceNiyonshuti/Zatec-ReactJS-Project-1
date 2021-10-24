@@ -4,8 +4,8 @@ function Footer() {
   return (
     <div className="bg-white shadow">
       <div className="flex flex-wrap p-6 bg-white">
-        <div className="flex flex-wra mb-4 w-full">
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-8 ">
+        <div className="flex flex-wrap justify-center mb-4 w-full">
+          <div className="w-full  sm:w-1/2 md:w-1/2 lg:w-1/4 px-8 ">
             <ul>
               <li>
                 <a className="text-xl py-4" href="#home">

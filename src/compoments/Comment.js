@@ -47,7 +47,7 @@ class Comment extends Component {
           </ul>
         </div>
         <h3 className="font-bold text-xl mb-2">Post Comment</h3>
-        <div class="flex h-screen">
+        <div class="flex">
           <div className="w-full bg-white p-2 rounded">
             <div className=" p-3 w-full">
               <textarea

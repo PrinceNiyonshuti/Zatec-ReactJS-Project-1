@@ -3,16 +3,20 @@ import React, { useState } from "react";
 const Post = () => {
   const [users, setUsers] = useState([]);
 
-  const addNewUser = () => {
-    setUsers([
-      ...users,
-      {
-        id: users.length,
-        name: "New me"
-      }
-    ]);
+  async function addNewUser() {
+    // setUsers([
+    //   ...users,
+    //   {
+    //     id: users.length,
+    //     name: "New me"
+    //   }
+    // ]);
+
+    const data = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const postData = await data.json();
+    setUsers(postData);
     console.log(users);
-  };
+  }
   return (
     <div>
       <h3 className="font-bold text-xl mb-2">Post Data</h3>
@@ -22,7 +26,7 @@ const Post = () => {
             <div>
               <button
                 onClick={addNewUser}
-                className="px-4 py-1 bg-blue-800 text-white rounded font-light hover:bg-blue-700"
+                className="px-4 py-1 bg-yellow-600 text-white rounded font-light hover:bg-yellow-900"
               >
                 Add Data to Array
               </button>
@@ -30,9 +34,7 @@ const Post = () => {
           </div>
           <h4 className="font-bold mt-2">Added User Data</h4>
           {users.map((user) => (
-            <p key={user.id}>
-              {user.name} {user.id}
-            </p>
+            <p key={user.id}>- {user.title}</p>
           ))}
         </div>
       </div>

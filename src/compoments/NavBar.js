@@ -14,19 +14,19 @@ function NavBar() {
             <div className="hidden md:flex items-center space-x-1">
               <a
                 href="#home"
-                class="py-2 px-2 font-medium text-white rounded bg-blue-500 hover:bg-blue-700 hover:text-white "
+                className="py-2 px-2 font-medium text-white rounded bg-blue-500 hover:bg-blue-700 hover:text-white "
               >
                 Home
               </a>
               <a
                 href="#home"
-                class="py-1 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white "
+                className="py-1 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white "
               >
                 About Us
               </a>
               <a
                 href="#home"
-                class="py-1 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white "
+                className="py-1 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white "
               >
                 Contact Us
               </a>

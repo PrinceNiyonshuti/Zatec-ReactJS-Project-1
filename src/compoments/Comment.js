@@ -2,7 +2,12 @@ import React, { useState, useRef } from "react";
 
 const Comment = () => {
   const commentsData = [
-    { id: 1, name: "Prince", details: "ello tere", posted_time: 2020 }
+    {
+      id: 1,
+      name: "Prince",
+      details: "ello tere",
+      posted_time: "Thu Oct 28 2021 11:16:26"
+    }
   ];
 
   const [comments, setComments] = useState(commentsData);
@@ -10,7 +15,6 @@ const Comment = () => {
   /* Form variables */
   const commentName = useRef();
   const commentDetails = useRef();
-  const commentTime = useRef();
   const commentForm = useRef();
 
   const postComment = (event) => {
@@ -18,7 +22,7 @@ const Comment = () => {
 
     const name = commentName.current.value;
     const details = commentDetails.current.value;
-    const posted_time = commentTime.current.value;
+    const posted_time = Date();
 
     const newComment = {
       id: comments.length + 1,
@@ -44,7 +48,9 @@ const Comment = () => {
               <div className="flex ml-2">
                 <div className="flex flex-col ml-2">
                   <span className="font-medium">{comment.name}</span>
-                  <span className="text-sm ">{comment.details}</span>
+                  <span className="text-sm ">
+                    {comment.details} {comment.posted_time}
+                  </span>
                 </div>
               </div>
             </li>
@@ -61,16 +67,6 @@ const Comment = () => {
                 required
                 id="name"
                 ref={commentName}
-                className="border p-2 rounded w-full"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className=" p-3 w-full">
-              <input
-                type="time"
-                required
-                id="posted_time"
-                ref={commentTime}
                 className="border p-2 rounded w-full"
                 placeholder="Your Name"
               />

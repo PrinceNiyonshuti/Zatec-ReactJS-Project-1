@@ -1,7 +1,6 @@
 import React from "react";
 import PlanesList from "./List/PlanesList";
 import Comment from "./Comment";
-import Post from "./Post";
 
 function Main() {
   return (
@@ -20,7 +19,6 @@ function Main() {
                 </div>
                 <PlanesList />
                 <Comment />
-                <Post />
               </div>
             </div>
           </div>

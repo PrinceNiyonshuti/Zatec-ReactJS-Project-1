@@ -6,7 +6,8 @@ const Comment = () => {
     {
       id: 1,
       name: "Prince",
-      details: "ello tere",
+      details:
+        "React is very fast and reliable in developemnt and easy to maintain ",
       posted_time: "Thu Oct 28 2021 11:16:26"
     }
   ];

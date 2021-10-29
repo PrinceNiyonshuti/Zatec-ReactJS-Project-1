@@ -48,9 +48,8 @@ const Comment = () => {
               <div className="flex ml-2">
                 <div className="flex flex-col ml-2">
                   <span className="font-medium">{comment.name}</span>
-                  <span className="text-sm ">
-                    {comment.details} {comment.posted_time}
-                  </span>
+                  <span className="text-md ">{comment.details}</span>
+                  <span className="text-sm ">{comment.posted_time}</span>
                 </div>
               </div>
             </li>

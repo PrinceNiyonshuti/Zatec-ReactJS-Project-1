@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Comments from "./Comments";
 
 const Comment = () => {
   const commentsData = [
@@ -41,18 +42,7 @@ const Comment = () => {
       <div className="w-full p-4">
         <ul>
           {comments.map((comment) => (
-            <li
-              key={comment.id}
-              className="flex justify-between items-center bg-white mt-2 p-2 shadow-lg rounded cursor-pointer"
-            >
-              <div className="flex ml-2">
-                <div className="flex flex-col ml-2">
-                  <span className="font-medium">{comment.name}</span>
-                  <span className="text-md ">{comment.details}</span>
-                  <span className="text-sm ">{comment.posted_time}</span>
-                </div>
-              </div>
-            </li>
+            <Comments key={comment.id} comment={comment} />
           ))}
         </ul>
       </div>
